@@ -1,0 +1,5 @@
+homeworks_total = 12
+time_spent = 1.5
+CourseName = 'Python'
+one_homework = time_spent / homeworks_total
+print(CourseName, homeworks_total, 'tasks', time_spent, 'hrs', 'approximately', one_homework, 'per task')
