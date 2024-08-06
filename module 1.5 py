@@ -3,6 +3,7 @@ print(immutable_var)
 immutable_var [0] = 'bow'
 print(immutable_var)
 #tuple object doesn't support item assigment
+#в кортежах нельзя менять данные, данный контейнер используется для того, чтобы хранить в нём те данные, которые мы не хотим ментять, чтобы что-то не сломалось в итоге
 
 mutable_var = ['sword', 'shield', 10, True]
 print(mutable_var)
