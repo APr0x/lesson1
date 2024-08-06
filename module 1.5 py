@@ -1,0 +1,18 @@
+immutable_var =  ('shield', 'sword', 1, False)
+print(immutable_var)
+immutable_var [0] = 'bow'
+print(immutable_var)
+#tuple object doesn't support item assigment
+
+mutable_var = ['sword', 'shield', 10, True]
+print(mutable_var)
+mutable_var.append('bow')
+print(mutable_var)
+mutable_var.remove(10)
+print(mutable_var)
+print('bow' in mutable_var)
+print(10 in mutable_var)
+print('arrow' not in mutable_var)
+print(len(mutable_var))
+print(mutable_var[0])
+print(mutable_var[-1])
