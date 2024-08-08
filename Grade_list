@@ -1,0 +1,12 @@
+students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+sorted_students = sorted(students)
+list_students = list(sorted_students)
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+a_grade = (sum(grades[0]) / len(grades[0]))
+b_grade = (sum(grades[1]) / len(grades[1]))
+j_grade = (sum(grades[2]) / len(grades[2]))
+k_grade = (sum(grades[3]) / len(grades[3]))
+s_grade = (sum(grades[4]) / len(grades[4]))
+grade_avg = {list_students[0] : a_grade, list_students[1]: b_grade, list_students[2]: j_grade,
+             list_students[3]: k_grade, list_students[4]: s_grade}
+print(grade_avg)
