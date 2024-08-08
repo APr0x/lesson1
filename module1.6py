@@ -1,0 +1,21 @@
+my_dict = {'born': 'monday', 'christined': 'tuesday'}
+print(my_dict.get('born'))
+print(my_dict.get('married'))
+my_dict ['married'] = 'wednessday'
+my_dict ['ill'] = 'friday'
+my_dict ['worse'] = 'thursday'
+print(my_dict)
+my_dict.update({'ill': 'thursday',
+                'worse': 'friday'})
+print(my_dict)
+a = my_dict.pop('born')
+print(a)
+print(my_dict)
+
+my_set = {6, 6, 4, 4, True, True, 1, 10, False, 'Saturday'}
+print(my_set)
+my_set.add(8)
+my_set.add(64)
+my_set.discard(3)
+my_set.remove(4)
+print(my_set)
