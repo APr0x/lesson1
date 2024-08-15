@@ -5,9 +5,9 @@ primes = []
 not_primes = []
 is_prime = True
 for num in range(a, b+1):
-    if(num > 1):
+    if (num > 1):
         for i in range(2, num):
-            if(num % i) == 0:
+            if (num % i) == 0:
                 is_prime = False
                 not_primes.append(num)
                 break
