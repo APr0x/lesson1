@@ -8,7 +8,7 @@ count_calls()
 def string_ifno(s1):
         a = (len(s1), s1.upper(), s1.lower())
         return a
-count_calls()
+    count_calls()
 def is_contains(s, l):
     list_to_search = True
     lower_l = []
@@ -18,8 +18,8 @@ def is_contains(s, l):
         return list_to_search
     else:
         return False
-count_calls()
-count_calls()
+    count_calls()
+    count_calls()
 print(string_ifno(s1= 'Ave Dominus Nox'))
 print(string_ifno(s1='Big floppa Cat'))
 print(is_contains(s="Batman", l=['Wonan', 'Man', 'BATman']))
