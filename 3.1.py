@@ -13,11 +13,36 @@ def string_ifno():
         count_calls()
 string_ifno()
 def is_contains():
-    string1 = ('Batman', ['Man', 'BATmAN', 'Woman'])
-    string2 = ('Wolverine', ['Cyclops', 'Rouge', 'Jubelee'])
-    print(string1)
-    print(string2)
-    list_to_search = True
+    list_to_search = 0
+    string1 = ('Batman')
+    string1_low = string1.lower()
+    string2 = ('Wolverine')
+    string2_low = string2.lower()
+    list1 = ['Man', 'BATmAN', 'Woman']
+    list1st = str(list1)
+    list1_low = list1st.lower()
+    list2 = ['Cyclops', 'Rouge', 'Jubelee']
+    list2st = str(list2)
+    list2_low = list2st.lower()
+
+    for i in string1_low:
+        for j in list1_low:
+            if i == j:
+                list_to_search = 1
+                break
+    if list_to_search == 1:
+        print(True)
     else:
-False
+        print(False)
+    for i in string2_low:
+        for j in list2_low:
+            if i == j:
+                list_to_search = 1
+                break
+    if list_to_search == 1:
+        print(True)
+    else:
+        print(False)
+
 count_calls()
+is_contains()
