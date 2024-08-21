@@ -1,0 +1,20 @@
+import random
+
+
+def dice_roll(sides=6, dice=1):
+    result = [random.randint(1, sides) for _ in range(dice)]
+    return result
+
+
+dice_roll()
+print('Hello, hero! Roll the dice!')
+print('Choose, wich dice You wanna roll 20 or 6?: ')
+sides = input(int)
+print('How many dices You wanna roll? ')
+dice = input(int)
+result = dice_roll(int(sides), int(dice))
+print(f'Rolled {dice} {sides}-sided dice: {result}')
+for i in result:
+    if i == 1:
+        print('Critical fail!')
+        print('YOU DIED')
