@@ -8,7 +8,7 @@ def dice_roll(sides=6, dice=1):
 
 dice_roll()
 print('Hello, hero! Roll the dice!')
-print('Choose, wich dice You wanna roll 20 or 6?: ')
+print('Choose, which dice You wanna roll 20 or 6?: ')
 sides = input(int)
 print('How many dices You wanna roll? ')
 dice = input(int)
