@@ -7,7 +7,7 @@ def send_email(message, recipient, *args, sender='university.help@gmail.com'):
             if _ in recipient:
                 flag = True
     if flag is False:
-        error = ('Невозможно отправить письмо с адреса ', sender, ' на адрес ', recipient, '.')
+        error = f'Невозможно отправить письмо с адреса {sender} на адрес{recipient}.'
         return error
     sobaka = '@'
     end = ('.com', '.net', '.ru')
@@ -17,24 +17,20 @@ def send_email(message, recipient, *args, sender='university.help@gmail.com'):
             if _ in recipient:
                 flag = True
     if flag is False:
-        error = ('Невозможно отправить письмо с адреса ', sender, ' на адрес ', recipient, '.')
+        error = f'Невозможно отправить письмо с адреса {sender} на адрес{recipient}.'
         return error
     if recipient == sender:
-        error1 = ('Нельзя отправить письмо самому себе!')
+        error1 = f'Нельзя отправить письмо самому себе!'
         return error1
-    sender = 'university.help@gmail.com'
-    check_sender = 'university.help@gmail.com'
-    flag = True
-    if check_sender in sender:
-        if _ in sender:
-            if _ in check_sender:
-                flag = False
-    if not flag:
-        service_message = 'НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса ', sender, 'на адрес', recipient
+    if sender != 'university.help@gmail.com':
+
+        service_message = f'НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}.'
         return service_message
     else:
-        success = ('Письмо успешно отправлено с адреса ', sender, ' на адрес ', recipient,'.')
+        success = f'Письмо успешно отправлено с адреса с адреса {sender} на адрес {recipient}.'
         return success
 
-
-print(send_email('Hello, World', 'bobr_kurwa@mail.ru'))
+print(send_email('ALLO, MAGNUS, ETO TI?', 'russ@fenrir.com'))
+print(send_email('Hydra Dominatus!', 'korax@raven.com', sender='alfary@alfa.com'))
+print(send_email('Perturabo, ti gde?', 'dorn@fallanga.warp'))
+print(send_email('Ti poekhavshiy? Ty kuda pishseh?', 'guilimann@ultramar.com', sender='guilimann@ultramar.com'))
