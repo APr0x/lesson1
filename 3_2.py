@@ -12,9 +12,9 @@ def send_email(message, recipient, *args, sender='university.help@gmail.com'):
     sobaka = '@'
     end = ('.com', '.net', '.ru')
     flag = False
-    if sobaka in recipient:
+    if sobaka in sender:
         for _ in end:
-            if _ in recipient:
+            if _ in sender:
                 flag = True
     if flag is False:
         error = f'Невозможно отправить письмо с адреса {sender} на адрес{recipient}.'
