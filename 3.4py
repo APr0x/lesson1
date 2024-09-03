@@ -1,8 +1,7 @@
 def single_root_words(root_word, *other_words):
     same_words = []
-    upper_word = root_word.upper()
     for word in other_words:
-        if upper_word in word.upper():
+        if root_word.upper().count(word.upper()) or word.upper().count(root_word.upper()):
             same_words.append(word)
     return same_words
 print(single_root_words('Assemble', 'Assembler', 'Reassemble', 'Kindread'))
